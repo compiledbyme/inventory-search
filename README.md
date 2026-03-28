@@ -9,7 +9,15 @@ npm install
 npm run dev
 ```
 
-The development server runs on `http://localhost:3001`.
+The development server runs on `http://localhost:3000`.
+
+## Deployment
+
+This app is deployed on Vercel.
+
+- Production URL: `https://inventory-search-brown.vercel.app`
+- Project URL: `https://vercel.com/chetanshimpi2001-2539s-projects/inventory-search`
+- The GitHub repository is connected to Vercel, so pushes to `main` trigger new deployments automatically.
 
 ## Environment Variables
 
@@ -18,6 +26,7 @@ No environment variables are required for the current codebase.
 - Use `.env.local` for any future secrets or deployment-specific values.
 - A starter template is included in `.env.example`.
 - No confidential values are currently hardcoded in this repository.
+- No Vercel environment variables are currently required for deployment.
 
 ## API Endpoints
 
