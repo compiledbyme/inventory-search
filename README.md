@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Inventory Search
 
-## Getting Started
+This project is a Next.js inventory search app with server-side filtering and pagination over a local JSON dataset.
 
-First, run the development server:
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The development server runs on `http://localhost:3001`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+No environment variables are required for the current codebase.
 
-## Learn More
+- Use `.env.local` for any future secrets or deployment-specific values.
+- A starter template is included in `.env.example`.
+- No confidential values are currently hardcoded in this repository.
 
-To learn more about Next.js, take a look at the following resources:
+## API Endpoints
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `GET /search` searches inventory with optional `q`, `category`, `minPrice`, `maxPrice`, `page`, and `pageSize` query params.
+- `GET /api/search` is kept as a compatibility alias for the same search handler.
+- `GET /api/categories` returns the available categories.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Search Logic
 
-## Deploy on Vercel
+- The search starts from the full inventory dataset and applies filters only when they are provided.
+- `q` performs a case-insensitive partial match on `productName` by lowercasing both the query and stored product names before using substring matching.
+- `category` is treated as an exact, case-insensitive filter.
+- `minPrice` and `maxPrice` are inclusive numeric filters, so multiple filters can be combined in the same request.
+- If no filters are provided, the API still returns all records. When pagination parameters are sent by the UI, the API returns the matching records page by page.
+- Invalid price ranges are rejected before results are returned.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Performance Improvement
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Server-side pagination keeps the frontend from requesting and rendering every matching record at once. The search layer also precomputes lowercase product names and a category index in memory so repeated searches avoid repeated normalization and can start from a smaller candidate set when a category filter is present.
+
+For a production-scale dataset beyond this assessment, the next step would be moving the search to a database such as PostgreSQL and adding indexes on `productName`, `category`, and `price`.

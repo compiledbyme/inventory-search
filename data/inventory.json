@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1",
+    "productName": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 29.99,
+    "supplier": "TechDistro Inc",
+    "quantity": 150,
+    "description": "Ergonomic wireless mouse with 2.4GHz connection"
+  },
+  {
+    "id": "2",
+    "productName": "Mechanical Keyboard",
+    "category": "Electronics",
+    "price": 89.99,
+    "supplier": "TechDistro Inc",
+    "quantity": 75,
+    "description": "RGB mechanical keyboard with blue switches"
+  },
+  {
+    "id": "3",
+    "productName": "Office Chair",
+    "category": "Furniture",
+    "price": 199.99,
+    "supplier": "FurnitureSupply Co",
+    "quantity": 30,
+    "description": "Ergonomic mesh office chair"
+  },
+  {
+    "id": "4",
+    "productName": "Standing Desk",
+    "category": "Furniture",
+    "price": 349.99,
+    "supplier": "FurnitureSupply Co",
+    "quantity": 20,
+    "description": "Electric height adjustable standing desk"
+  },
+  {
+    "id": "5",
+    "productName": "USB-C Cable",
+    "category": "Accessories",
+    "price": 12.99,
+    "supplier": "CableMaster",
+    "quantity": 500,
+    "description": "6ft USB-C to USB-C charging cable"
+  },
+  {
+    "id": "6",
+    "productName": "Laptop Stand",
+    "category": "Accessories",
+    "price": 45.99,
+    "supplier": "TechDistro Inc",
+    "quantity": 120,
+    "description": "Aluminum foldable laptop stand"
+  },
+  {
+    "id": "7",
+    "productName": "Monitor 27 inch",
+    "category": "Electronics",
+    "price": 249.99,
+    "supplier": "DisplayTech",
+    "quantity": 45,
+    "description": "4K UHD monitor with IPS panel"
+  },
+  {
+    "id": "8",
+    "productName": "Webcam HD",
+    "category": "Electronics",
+    "price": 79.99,
+    "supplier": "DisplayTech",
+    "quantity": 60,
+    "description": "1080p HD webcam with microphone"
+  },
+  {
+    "id": "9",
+    "productName": "Desk Lamp",
+    "category": "Lighting",
+    "price": 34.99,
+    "supplier": "LightingPro",
+    "quantity": 85,
+    "description": "LED desk lamp with adjustable brightness"
+  },
+  {
+    "id": "10",
+    "productName": "Wireless Charger",
+    "category": "Electronics",
+    "price": 24.99,
+    "supplier": "TechDistro Inc",
+    "quantity": 200,
+    "description": "Fast wireless charging pad"
+  },
+  {
+    "id": "11",
+    "productName": "Desk Mat",
+    "category": "Accessories",
+    "price": 19.99,
+    "supplier": "FurnitureSupply Co",
+    "quantity": 90,
+    "description": "Large desk mat with stitched edges"
+  },
+  {
+    "id": "12",
+    "productName": "USB Hub",
+    "category": "Electronics",
+    "price": 39.99,
+    "supplier": "TechDistro Inc",
+    "quantity": 110,
+    "description": "7-port USB 3.0 hub"
+  },
+  {
+    "id": "13",
+    "productName": "Noise Cancelling Headphones",
+    "category": "Electronics",
+    "price": 159.99,
+    "supplier": "AudioWave",
+    "quantity": 55,
+    "description": "Over-ear headphones with active noise cancellation"
+  },
+  {
+    "id": "14",
+    "productName": "Portable SSD 1TB",
+    "category": "Electronics",
+    "price": 129.99,
+    "supplier": "DataCore",
+    "quantity": 95,
+    "description": "High-speed USB-C portable solid state drive"
+  },
+  {
+    "id": "15",
+    "productName": "Conference Speakerphone",
+    "category": "Electronics",
+    "price": 149.99,
+    "supplier": "AudioWave",
+    "quantity": 40,
+    "description": "Bluetooth speakerphone for team meetings"
+  },
+  {
+    "id": "16",
+    "productName": "Bookshelf",
+    "category": "Furniture",
+    "price": 139.99,
+    "supplier": "Workspace Furnishings",
+    "quantity": 18,
+    "description": "Five-tier wooden bookshelf for office storage"
+  },
+  {
+    "id": "17",
+    "productName": "Filing Cabinet",
+    "category": "Furniture",
+    "price": 189.99,
+    "supplier": "Workspace Furnishings",
+    "quantity": 24,
+    "description": "Lockable three-drawer filing cabinet"
+  },
+  {
+    "id": "18",
+    "productName": "Monitor Arm",
+    "category": "Accessories",
+    "price": 64.99,
+    "supplier": "ErgoFlex",
+    "quantity": 70,
+    "description": "Adjustable gas spring monitor arm"
+  },
+  {
+    "id": "19",
+    "productName": "Docking Station",
+    "category": "Accessories",
+    "price": 119.99,
+    "supplier": "TechDistro Inc",
+    "quantity": 65,
+    "description": "USB-C docking station with HDMI and Ethernet"
+  },
+  {
+    "id": "20",
+    "productName": "Cable Organizer Kit",
+    "category": "Accessories",
+    "price": 14.99,
+    "supplier": "CableMaster",
+    "quantity": 260,
+    "description": "Desk cable clips and sleeves set"
+  },
+  {
+    "id": "21",
+    "productName": "Floor Lamp",
+    "category": "Lighting",
+    "price": 59.99,
+    "supplier": "LightingPro",
+    "quantity": 50,
+    "description": "Minimalist floor lamp with warm LED bulb"
+  },
+  {
+    "id": "22",
+    "productName": "Ring Light",
+    "category": "Lighting",
+    "price": 44.99,
+    "supplier": "LightingPro",
+    "quantity": 78,
+    "description": "Dimmable ring light for video calls and streaming"
+  },
+  {
+    "id": "23",
+    "productName": "Air Purifier",
+    "category": "Appliances",
+    "price": 179.99,
+    "supplier": "FreshAir Systems",
+    "quantity": 28,
+    "description": "HEPA air purifier for medium-sized office rooms"
+  },
+  {
+    "id": "24",
+    "productName": "Mini Fridge",
+    "category": "Appliances",
+    "price": 229.99,
+    "supplier": "FreshAir Systems",
+    "quantity": 12,
+    "description": "Compact office fridge with adjustable shelves"
+  },
+  {
+    "id": "25",
+    "productName": "Electric Kettle",
+    "category": "Appliances",
+    "price": 39.99,
+    "supplier": "Breakroom Essentials",
+    "quantity": 48,
+    "description": "Stainless steel kettle with auto shut-off"
+  },
+  {
+    "id": "26",
+    "productName": "Whiteboard 48 inch",
+    "category": "Office Supplies",
+    "price": 94.99,
+    "supplier": "OfficeHub",
+    "quantity": 22,
+    "description": "Wall-mounted magnetic whiteboard"
+  },
+  {
+    "id": "27",
+    "productName": "Paper Shredder",
+    "category": "Office Supplies",
+    "price": 129.99,
+    "supplier": "OfficeHub",
+    "quantity": 16,
+    "description": "Cross-cut shredder for confidential documents"
+  },
+  {
+    "id": "28",
+    "productName": "Printer Ink Set",
+    "category": "Office Supplies",
+    "price": 69.99,
+    "supplier": "PrintWorks",
+    "quantity": 140,
+    "description": "High-yield cyan, magenta, yellow, and black cartridges"
+  }
+]
